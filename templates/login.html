@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}
+Admin Login
+{% endblock %}
+
+
+{% block content %}
+
+<div class="login-container">
+
+    <div class="login-shell">
+
+        <div class="dashboard-label text-center">
+            SABARISH GARMENTS
+        </div>
+
+        <h2>
+            Admin Access
+        </h2>
+
+        <p>
+            Manage leads, quote requests and order enquiries securely.
+        </p>
+
+        {% if error %}
+
+        <div class="login-error">
+            {{ error }}
+        </div>
+
+        {% endif %}
+
+        <form method="POST" class="login-form">
+
+            <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                class="form-control"
+                required
+            >
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                class="form-control"
+                required
+            >
+
+            <button
+                type="submit"
+                class="login-submit"
+            >
+                Login to Dashboard
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,221 @@
+{% extends "base.html" %}
+
+{% block title %}
+Request a Quote | Sabarish Garments
+{% endblock %}
+
+{% block content %}
+
+<section class="enquiry-page">
+    <div class="container py-5">
+
+        <div class="enquiry-wrapper reveal">
+
+            <!-- LEFT SIDE -->
+            <div class="enquiry-intro">
+
+                <span class="dashboard-label">SABARISH GARMENTS</span>
+
+                <h1>
+                    Let's Build Something
+                    <span>Great Together.</span>
+                </h1>
+
+                <p>
+                    Tell us about your garment requirement and our team
+                    will get back to you with the right solution.
+                </p>
+
+                <div class="enquiry-points">
+
+                    <div class="enquiry-point">
+                        <div class="enquiry-point-icon">✓</div>
+                        <div>
+                            <h4>Bulk Manufacturing</h4>
+                            <p>Reliable garment production for bulk orders.</p>
+                        </div>
+                    </div>
+
+                    <div class="enquiry-point">
+                        <div class="enquiry-point-icon">✦</div>
+                        <div>
+                            <h4>Custom Branding</h4>
+                            <p>Custom designs, branding and garment requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="enquiry-point">
+                        <div class="enquiry-point-icon">↗</div>
+                        <div>
+                            <h4>Quick Enquiry</h4>
+                            <p>Share your requirements and request a quotation.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="enquiry-card">
+
+                <div class="enquiry-card-header">
+                    <span class="enquiry-card-label">GET STARTED</span>
+
+                    <h2>Request a Quote</h2>
+
+                    <p>
+                        Fill in your details and tell us what you need.
+                    </p>
+                </div>
+
+
+                <form
+                    method="POST"
+                    action="{{ url_for('submit_enquiry') }}"
+                    class="enquiry-form"
+                >
+
+                    <div class="row g-3">
+
+                        <!-- NAME -->
+                        <div class="col-md-6">
+                            <label for="name">Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="form-control"
+                                placeholder="Your name"
+                                required
+                            >
+                        </div>
+
+
+                        <!-- PHONE -->
+                        <div class="col-md-6">
+                            <label for="phone">Phone</label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                class="form-control"
+                                placeholder="Your phone number"
+                                required
+                            >
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="col-md-6">
+                            <label for="email">Email</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-control"
+                                placeholder="your@email.com"
+                            >
+                        </div>
+
+
+                        <!-- COMPANY -->
+                        <div class="col-md-6">
+                            <label for="company">Company</label>
+
+                            <input
+                                type="text"
+                                id="company"
+                                name="company"
+                                class="form-control"
+                                placeholder="Company name"
+                            >
+                        </div>
+
+
+                        <!-- PRODUCT -->
+                        <div class="col-md-6">
+                            <label for="product">Product</label>
+
+                            <select
+                                id="product"
+                                name="product"
+                                class="form-select"
+                            >
+                                <option value="Cotton T-Shirt">
+                                    Cotton T-Shirt
+                                </option>
+
+                                <option value="Polo T-Shirt">
+                                    Polo T-Shirt
+                                </option>
+
+                                <option value="Hoodie">
+                                    Hoodie
+                                </option>
+
+                                <option value="Oversized T-Shirt">
+                                    Oversized T-Shirt
+                                </option>
+                            </select>
+                        </div>
+
+
+                        <!-- QUANTITY -->
+                        <div class="col-md-6">
+                            <label for="quantity">Quantity</label>
+
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                class="form-control"
+                                placeholder="Minimum 100 pieces"
+                                min="100"
+                            >
+                        </div>
+
+
+                        <!-- MESSAGE -->
+                        <div class="col-12">
+                            <label for="message">Message</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                class="form-control"
+                                rows="5"
+                                placeholder="Tell us about your garment requirement..."
+                            ></textarea>
+                        </div>
+
+
+                        <!-- SUBMIT -->
+                        <div class="col-12">
+
+                            <button
+                                type="submit"
+                                class="enquiry-submit"
+                            >
+                                <span>Submit Enquiry</span>
+                                <strong>→</strong>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

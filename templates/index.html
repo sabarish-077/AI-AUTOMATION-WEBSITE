@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sabarish Garments | Premium Garment Manufacturing</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<nav class="main-navbar navbar">
+
+    <div class="container navbar-container">
+
+        <a class="brand" href="{{ url_for('home') }}">
+            <span class="brand-mark">SG</span>
+            <span class="brand-text">
+                SABARISH
+                <small>GARMENTS</small>
+            </span>
+        </a>
+
+        <div class="nav-links">
+            <a class="nav-link-custom" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-link-custom" href="#about">About</a>
+            <a class="nav-link-custom" href="{{ url_for('products') }}">Products</a>
+            <a class="nav-link-custom" href="#process">Process</a>
+            <a class="nav-quote-btn" href="{{ url_for('enquiry') }}">
+                Get Quote <span>↗</span>
+            </a>
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="hero-section">
+
+    <div class="hero-glow glow-one"></div>
+    <div class="hero-glow glow-two"></div>
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- HERO TEXT -->
+
+            <div class="col-lg-6">
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        PREMIUM GARMENT MANUFACTURING
+                    </div>
+
+                    <h1 class="hero-title">
+
+                        We Manufacture
+                        <span>What Your Brand</span>
+                        <strong>Wants to Wear.</strong>
+
+                    </h1>
+
+                    <p class="hero-description">
+                        Premium garment manufacturing for brands,
+                        businesses, wholesalers and bulk buyers.
+                        Quality fabrics, professional finishing
+                        and reliable production.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="{{ url_for('enquiry') }}"
+                            class="hero-btn primary-btn"
+                        >
+                            Request a Quote →
+                        </a>
+
+                        <a
+                            href="{{ url_for('products') }}"
+                            class="hero-btn secondary-btn"
+                        >
+                            Explore Products
+                        </a>
+
+                    </div>
+
+                    <div class="hero-trust reveal">
+
+                        <div class="trust-line">
+                            <span>✓</span> Bulk Manufacturing
+                        </div>
+
+                        <div class="trust-line">
+                            <span>✓</span> Custom Branding
+                        </div>
+
+                        <div class="trust-line">
+                            <span>✓</span> Quality Production
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO IMAGE -->
+
+            <div class="col-lg-6">
+
+                <div class="hero-image-wrapper">
+
+                    <div class="hero-image-glow"></div>
+
+                    <div class="garment-floating fabric-tag tag-one">Cotton</div>
+                    <div class="garment-floating fabric-tag tag-two">Custom</div>
+                    <div class="garment-floating fabric-tag tag-three">Denim</div>
+                    <div class="garment-floating fabric-tag tag-four">Bulk</div>
+
+                    <img
+                        src="https://texasia.com/wp-content/uploads/2025/12/How-are-t-shirts-manufactured-1.jpeg"
+                        alt="Garment Manufacturing Factory"
+                        class="hero-image"
+                    >
+
+                    <div class="hero-image-card">
+
+                        <span class="card-small">
+                            PRODUCTION
+                        </span>
+
+                        <strong>
+                            Quality Garments
+                        </strong>
+
+                        <span>
+                            Built for Brands
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     STATS
+========================================= -->
+
+<section class="stats-section">
+
+    <div class="container">
+
+        <div class="stats-wrapper">
+
+            <div class="stat-box">
+
+                <div class="stat-icon">
+                    ✦
+                </div>
+
+                <h3>100+</h3>
+
+                <p>Minimum Order</p>
+
+            </div>
+
+
+            <div class="stat-box">
+
+                <div class="stat-icon">
+                    ◈
+                </div>
+
+                <h3>4+</h3>
+
+                <p>Product Categories</p>
+
+            </div>
+
+
+            <div class="stat-box">
+
+                <div class="stat-icon">
+                    ✓
+                </div>
+
+                <h3>100%</h3>
+
+                <p>Quality Focus</p>
+
+            </div>
+
+
+            <div class="stat-box">
+
+                <div class="stat-icon">
+                    ◎
+                </div>
+
+                <h3>B2B</h3>
+
+                <p>Bulk Manufacturing</p>
+
+            </div>
+
+        </div>
+
+        <div class="trust-badges mt-4 reveal">
+            <span class="trust-badge">Premium Fabrics</span>
+            <span class="trust-badge">Custom Branding</span>
+            <span class="trust-badge">Bulk Order Ready</span>
+            <span class="trust-badge">Professional Service</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section class="about-section" id="about">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- IMAGE -->
+
+            <div class="col-lg-6">
+
+                <div class="about-visual">
+
+                    <div class="about-card-main">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=88"
+                            alt="Premium garment collection"
+                        >
+
+                        <div class="about-card-content">
+
+                            <span>
+                                OUR PRODUCTION
+                            </span>
+
+                            <h3>
+                                From Fabric to Finished Garment
+                            </h3>
+
+                            <p>
+                                Quality-focused manufacturing
+                                for bulk and private-label orders.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card floating-card-one">
+
+                        <strong>100+</strong>
+
+                        <span>
+                            MOQ Pieces
+                        </span>
+
+                    </div>
+
+                    <div class="floating-card floating-card-two">
+
+                        <span class="check">
+                            ✓
+                        </span>
+
+                        <div>
+                            <strong>
+                                Quality First
+                            </strong>
+
+                            <small>
+                                Every Production
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTENT -->
+
+            <div class="col-lg-6">
+
+                <div class="about-content">
+
+                    <span class="section-label">
+                        ABOUT SABARISH GARMENTS
+                    </span>
+
+                    <h2 class="section-title">
+                        Manufacturing
+                        <span>Confidence</span>
+                        For Your Brand.
+                    </h2>
+
+                    <p class="section-text">
+
+                        Sabarish Garments focuses on premium
+                        garment manufacturing for businesses,
+                        fashion brands and wholesale buyers.
+
+                    </p>
+
+                    <p class="section-text">
+
+                        From everyday cotton T-shirts to
+                        oversized streetwear and hoodies,
+                        we help businesses turn their garment
+                        requirements into finished products.
+
+                    </p>
+
+
+                    <div class="about-features">
+
+                        <div class="about-feature">
+
+                            <span>✓</span>
+
+                            <div>
+                                <strong>
+                                    Bulk Manufacturing
+                                </strong>
+
+                                <p>
+                                    Production for business
+                                    and wholesale requirements.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-feature">
+
+                            <span>✓</span>
+
+                            <div>
+                                <strong>
+                                    Custom Branding
+                                </strong>
+
+                                <p>
+                                    Support for custom
+                                    garment requirements.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-feature">
+
+                            <span>✓</span>
+
+                            <div>
+                                <strong>
+                                    Quality Finishing
+                                </strong>
+
+                                <p>
+                                    Focus on fabric quality
+                                    and finishing.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="{{ url_for('enquiry') }}"
+                        class="about-btn"
+                    >
+                        Start Your Order →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     WHY CHOOSE US
+========================================= -->
+
+<section class="why-us-section reveal">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+
+                <span class="section-label">
+                    WHY CHOOSE US
+                </span>
+
+                <h2 class="section-title text-start">
+                    Built for
+                    <span>brands that need trust</span>
+                </h2>
+
+                <p class="section-text">
+                    We combine production discipline, quality focus and reliable business communication so your garment requirements move smoothly from planning to delivery.
+                </p>
+
+            </div>
+
+            <div class="col-lg-7">
+
+                <div class="reason-grid">
+
+                    <div class="reason-card">
+                        <div class="reason-icon">01</div>
+                        <h4>Consistent Quality</h4>
+                        <p>Premium finishing and reliable manufacturing standards for every order.</p>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-icon">02</div>
+                        <h4>Scalable Production</h4>
+                        <p>Designed to support wholesale, bulk and private-label garment requirements.</p>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-icon">03</div>
+                        <h4>Brand-Focused</h4>
+                        <p>Manufacturing tailored to your product, fit and custom branding requirements.</p>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-icon">04</div>
+                        <h4>Business Ready</h4>
+                        <p>Clear communication, dependable process flow and professional support.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PRODUCTS
+========================================= -->
+
+<section class="products-section reveal">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    OUR COLLECTION
+                </span>
+
+                <h2 class="section-title">
+                    Products Made
+                    <span>For Your Brand</span>
+                </h2>
+
+            </div>
+
+            <p>
+                Premium garment categories for
+                bulk manufacturing requirements.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- COTTON -->
+
+            <div class="col-md-6 col-xl-3">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=82"
+                            alt="Cotton T-Shirt"
+                            loading="lazy"
+                        >
+
+                        <span class="product-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <div class="product-content">
+
+                        <span class="product-index">
+                            EVERYDAY ESSENTIAL
+                        </span>
+
+                        <h3>
+                            Cotton T-Shirt
+                        </h3>
+
+                        <p>
+                            Premium cotton T-shirts with
+                            comfortable fits and quality finishing.
+                        </p>
+
+                        <a href="{{ url_for('enquiry') }}">
+                            Get Quote →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- POLO -->
+
+            <div class="col-md-6 col-xl-3">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?auto=format&fit=crop&w=900&q=82"
+                            alt="Polo T-Shirt"
+                            loading="lazy"
+                        >
+
+                        <span class="product-number">
+                            02
+                        </span>
+
+                    </div>
+
+                    <div class="product-content">
+
+                        <span class="product-index">
+                            CORPORATE WEAR
+                        </span>
+
+                        <h3>
+                            Polo T-Shirt
+                        </h3>
+
+                        <p>
+                            Smart and comfortable polo shirts
+                            for brands and businesses.
+                        </p>
+
+                        <a href="{{ url_for('enquiry') }}">
+                            Get Quote →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HOODIE -->
+
+            <div class="col-md-6 col-xl-3">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=82"
+                            alt="Hoodie"
+                            loading="lazy"
+                        >
+
+                        <span class="product-number">
+                            03
+                        </span>
+
+                    </div>
+
+                    <div class="product-content">
+
+                        <span class="product-index">
+                            STREETWEAR
+                        </span>
+
+                        <h3>
+                            Hoodies
+                        </h3>
+
+                        <p>
+                            Premium hoodies designed for
+                            fashion brands and collections.
+                        </p>
+
+                        <a href="{{ url_for('enquiry') }}">
+                            Get Quote →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OVERSIZED -->
+
+            <div class="col-md-6 col-xl-3">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=82"
+                            alt="Oversized T-Shirt"
+                            loading="lazy"
+                        >
+
+                        <span class="product-number">
+                            04
+                        </span>
+
+                    </div>
+
+                    <div class="product-content">
+
+                        <span class="product-index">
+                            MODERN FIT
+                        </span>
+
+                        <h3>
+                            Oversized T-Shirt
+                        </h3>
+
+                        <p>
+                            Modern oversized and boxy fits
+                            for fashion-forward brands.
+                        </p>
+
+                        <a href="{{ url_for('enquiry') }}">
+                            Get Quote →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="products-bottom">
+
+            <div>
+
+                <span class="section-label">
+                    BULK MANUFACTURING
+                </span>
+
+                <h3>
+                    Need a custom garment requirement?
+                </h3>
+
+                <p>
+                    Tell us your product, quantity and
+                    requirements.
+                </p>
+
+            </div>
+
+            <a
+                href="{{ url_for('products') }}"
+                class="view-all-btn"
+            >
+                View All Products →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PROCESS
+========================================= -->
+
+<section class="process-section" id="process">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <span class="section-label">
+                HOW IT WORKS
+            </span>
+
+            <h2 class="section-title">
+                Simple From
+                <span>Enquiry to Production</span>
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4 process-row">
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="process-card">
+
+                    <div class="process-top">
+                        <span>01</span>
+                        <div>→</div>
+                    </div>
+
+                    <h3>
+                        Send Enquiry
+                    </h3>
+
+                    <p>
+                        Tell us the product,
+                        quantity and requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="process-card">
+
+                    <div class="process-top">
+                        <span>02</span>
+                        <div>→</div>
+                    </div>
+
+                    <h3>
+                        Discuss Requirements
+                    </h3>
+
+                    <p>
+                        We understand your garment
+                        and branding requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="process-card">
+
+                    <div class="process-top">
+                        <span>03</span>
+                        <div>→</div>
+                    </div>
+
+                    <h3>
+                        Production
+                    </h3>
+
+                    <p>
+                        Your garments move through
+                        the manufacturing process.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="process-card">
+
+                    <div class="process-top">
+                        <span>04</span>
+                        <div>✓</div>
+                    </div>
+
+                    <h3>
+                        Delivery
+                    </h3>
+
+                    <p>
+                        Finished garments are prepared
+                        for your business order.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     CTA
+========================================= -->
+
+<section class="cta-section">
+
+    <div class="cta-glow"></div>
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <span class="section-label">
+                READY TO START?
+            </span>
+
+            <h2>
+                Let's Build Your
+                <span>Next Collection.</span>
+            </h2>
+
+            <p>
+                Send your garment requirements and
+                let us discuss your bulk order.
+            </p>
+
+            <a
+                href="{{ url_for('enquiry') }}"
+                class="cta-btn"
+            >
+                Request a Quote →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a
+                    href="{{ url_for('home') }}"
+                    class="footer-logo"
+                >
+                    SABARISH
+                    <span>GARMENTS</span>
+                </a>
+
+                <p>
+                    Premium garment manufacturing
+                    for brands and businesses.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="{{ url_for('home') }}">
+                    Home
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="{{ url_for('products') }}">
+                    Products
+                </a>
+
+                <a href="{{ url_for('enquiry') }}">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Sabarish Garments.
+                All rights reserved.
+            </span>
+
+            <span>
+                Tiruppur • Tamil Nadu
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================
+     AI CHAT BUTTON
+========================================= -->
+
+<button
+    class="ai-button"
+    onclick="toggleChat()"
+    aria-label="Open AI Assistant"
+>
+
+    <span class="ai-pulse"></span>
+
+    ✦
+
+</button>
+
+
+<!-- =========================================
+     AI CHAT
+========================================= -->
+
+<div id="ai-chat">
+
+    <div class="ai-header">
+
+        <div class="ai-profile">
+
+            <div class="ai-avatar">
+                ✦
+            </div>
+
+            <div>
+
+                <strong>
+                    Sabarish AI
+                </strong>
+
+                <span>
+                    <i class="online-dot"></i>
+                    Online
+                </span>
+
+            </div>
+
+        </div>
+
+        <button
+            class="ai-close"
+            onclick="toggleChat()"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+        id="chat-messages"
+        class="chat-messages"
+    >
+
+        <div class="bot-message">
+
+            Hi! 👋 I'm Sabarish Garments AI Assistant.
+
+            <br><br>
+
+            How can I help you today?
+
+        </div>
+
+    </div>
+
+
+    <div class="chat-input-area">
+
+        <input
+            type="text"
+            id="chat-input"
+            class="chat-input"
+            placeholder="Ask about our garments..."
+            onkeydown="handleEnter(event)"
+        >
+
+        <button
+            onclick="sendMessage()"
+            class="chat-send"
+        >
+            →
+        </button>
+
+    </div>
+
+</div>
+
+
+<script
+    src="{{ url_for('static', filename='js/script.js') }}"
+></script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+
+</body>
+</html>

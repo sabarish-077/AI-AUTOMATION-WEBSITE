@@ -1,0 +1,275 @@
+{% extends "base.html" %}
+
+{% block title %}
+Customer Leads | Sabarish Garments
+{% endblock %}
+
+{% block content %}
+
+<section class="leads-page">
+
+    <div class="container py-5">
+
+        <!-- HEADER -->
+        <div class="leads-header">
+
+            <div>
+                <span class="dashboard-label">SABARISH GARMENTS</span>
+
+                <h1>Customer Leads</h1>
+
+                <p>
+                    Manage enquiries, track customer requirements
+                    and update lead status.
+                </p>
+            </div>
+
+            <a
+                href="{{ url_for('dashboard') }}"
+                class="leads-dashboard-btn"
+            >
+                <span>←</span>
+                Dashboard
+            </a>
+
+        </div>
+
+
+        <!-- LEADS TABLE -->
+        <div class="leads-card">
+
+            <div class="leads-card-header">
+
+                <div>
+                    <span class="dashboard-label">LEAD MANAGEMENT</span>
+                    <h2>All Customer Enquiries</h2>
+                </div>
+
+                <div class="lead-count">
+                    {{ leads|length }} Leads
+                </div>
+
+            </div>
+
+
+            <div class="table-responsive">
+
+                <table class="leads-table">
+
+                    <thead>
+
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Phone</th>
+                            <th>Company</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        {% for lead in leads %}
+
+                        <tr>
+
+                            <!-- ID -->
+                            <td>
+                                <span class="lead-id">
+                                    #{{ lead.id }}
+                                </span>
+                            </td>
+
+
+                            <!-- CUSTOMER -->
+                            <td>
+
+                                <div class="lead-customer">
+
+                                    <div class="customer-avatar">
+                                        {{ lead.name[0]|upper }}
+                                    </div>
+
+                                    <div>
+                                        <strong>
+                                            {{ lead.name }}
+                                        </strong>
+
+                                        {% if lead.email %}
+                                        <small>
+                                            {{ lead.email }}
+                                        </small>
+                                        {% endif %}
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <!-- PHONE -->
+                            <td>
+                                <span class="lead-phone">
+                                    {{ lead.phone }}
+                                </span>
+                            </td>
+
+
+                            <!-- COMPANY -->
+                            <td>
+                                {{ lead.company or '—' }}
+                            </td>
+
+
+                            <!-- PRODUCT -->
+                            <td>
+
+                                <span class="product-badge">
+                                    {{ lead.product }}
+                                </span>
+
+                            </td>
+
+
+                            <!-- QUANTITY -->
+                            <td>
+
+                                {% if lead.quantity %}
+                                    <strong>
+                                        {{ lead.quantity }}
+                                    </strong>
+                                    <small class="quantity-label">
+                                        pcs
+                                    </small>
+                                {% else %}
+                                    —
+                                {% endif %}
+
+                            </td>
+
+
+                            <!-- STATUS -->
+                            <td>
+
+                                <form
+                                    method="POST"
+                                    action="{{ url_for('update_status', lead_id=lead.id) }}"
+                                >
+
+                                    <select
+                                        name="status"
+                                        class="status-select"
+                                        onchange="this.form.submit()"
+                                    >
+
+                                        <option
+                                            value="New"
+                                            {% if lead.status == 'New' %}
+                                            selected
+                                            {% endif %}
+                                        >
+                                            New
+                                        </option>
+
+                                        <option
+                                            value="Contacted"
+                                            {% if lead.status == 'Contacted' %}
+                                            selected
+                                            {% endif %}
+                                        >
+                                            Contacted
+                                        </option>
+
+                                        <option
+                                            value="Converted"
+                                            {% if lead.status == 'Converted' %}
+                                            selected
+                                            {% endif %}
+                                        >
+                                            Converted
+                                        </option>
+
+                                        <option
+                                            value="Lost"
+                                            {% if lead.status == 'Lost' %}
+                                            selected
+                                            {% endif %}
+                                        >
+                                            Lost
+                                        </option>
+
+                                    </select>
+
+                                </form>
+
+                            </td>
+
+
+                            <!-- DATE -->
+                            <td>
+
+                                <span class="lead-date">
+                                    {{ lead.created_at }}
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        {% else %}
+
+                        <tr>
+
+                            <td
+                                colspan="8"
+                                class="no-leads"
+                            >
+
+                                <div class="empty-leads">
+
+                                    <div class="empty-icon">
+                                        ◈
+                                    </div>
+
+                                    <h3>No Leads Yet</h3>
+
+                                    <p>
+                                        Customer enquiries will appear
+                                        here when someone submits a quote request.
+                                    </p>
+
+                                    <a
+                                        href="{{ url_for('home') }}"
+                                        class="empty-btn"
+                                    >
+                                        View Website →
+                                    </a>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                        {% endfor %}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

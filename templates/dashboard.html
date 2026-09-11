@@ -1,0 +1,269 @@
+{% extends "base.html" %}
+
+{% block title %}
+Business Dashboard | Sabarish Garments
+{% endblock %}
+
+{% block content %}
+
+<section class="dashboard-page">
+
+    <div class="container py-5">
+
+        <!-- HEADER -->
+        <div class="dashboard-header">
+
+            <div>
+                <span class="dashboard-label">
+                    SABARISH GARMENTS
+                </span>
+
+                <h1>
+                    Business Dashboard
+                </h1>
+
+                <p>
+                    Monitor your garment enquiries and customer leads.
+                </p>
+            </div>
+
+            <a href="{{ url_for('logout') }}"
+               class="dashboard-logout">
+                Logout
+                <span>↗</span>
+            </a>
+
+        </div>
+
+
+        <!-- STATS -->
+        <div class="row g-4 mt-4">
+
+            <!-- TOTAL -->
+            <div class="col-md-6 col-xl-3">
+
+                <div class="dashboard-card card-purple">
+
+                    <div class="dashboard-card-top">
+                        <div class="dashboard-icon">
+                            ◈
+                        </div>
+
+                        <span class="card-tag">
+                            ALL
+                        </span>
+                    </div>
+
+                    <h6>Total Leads</h6>
+
+                    <h2>
+                        {{ total }}
+                    </h2>
+
+                    <div class="card-bottom">
+                        <span>All enquiries received</span>
+                        <strong>→</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NEW -->
+            <div class="col-md-6 col-xl-3">
+
+                <div class="dashboard-card card-blue">
+
+                    <div class="dashboard-card-top">
+                        <div class="dashboard-icon">
+                            ✦
+                        </div>
+
+                        <span class="card-tag">
+                            NEW
+                        </span>
+                    </div>
+
+                    <h6>New Leads</h6>
+
+                    <h2>
+                        {{ new_leads }}
+                    </h2>
+
+                    <div class="card-bottom">
+                        <span>Waiting for contact</span>
+                        <strong>→</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACTED -->
+            <div class="col-md-6 col-xl-3">
+
+                <div class="dashboard-card card-pink">
+
+                    <div class="dashboard-card-top">
+                        <div class="dashboard-icon">
+                            ◎
+                        </div>
+
+                        <span class="card-tag">
+                            ACTIVE
+                        </span>
+                    </div>
+
+                    <h6>Contacted</h6>
+
+                    <h2>
+                        {{ contacted }}
+                    </h2>
+
+                    <div class="card-bottom">
+                        <span>Customers contacted</span>
+                        <strong>→</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONVERTED -->
+            <div class="col-md-6 col-xl-3">
+
+                <div class="dashboard-card card-orange">
+
+                    <div class="dashboard-card-top">
+                        <div class="dashboard-icon">
+                            ✓
+                        </div>
+
+                        <span class="card-tag">
+                            SUCCESS
+                        </span>
+                    </div>
+
+                    <h6>Converted</h6>
+
+                    <h2>
+                        {{ converted }}
+                    </h2>
+
+                    <div class="card-bottom">
+                        <span>Successful leads</span>
+                        <strong>→</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK ACTIONS -->
+        <div class="dashboard-section mt-5">
+
+            <div class="dashboard-section-header">
+
+                <div>
+                    <span class="dashboard-label">
+                        MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Quick Actions
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="row g-4 mt-2">
+
+                <div class="col-md-6">
+
+                    <a href="{{ url_for('leads') }}"
+                       class="dashboard-action">
+
+                        <div class="action-icon purple">
+                            ◈
+                        </div>
+
+                        <div class="action-content">
+                            <h3>View All Leads</h3>
+                            <p>
+                                View customer enquiries,
+                                requirements and lead status.
+                            </p>
+                        </div>
+
+                        <span class="action-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <a href="{{ url_for('home') }}"
+                       class="dashboard-action">
+
+                        <div class="action-icon blue">
+                            ⌂
+                        </div>
+
+                        <div class="action-content">
+                            <h3>View Website</h3>
+                            <p>
+                                Open the customer-facing
+                                garment website.
+                            </p>
+                        </div>
+
+                        <span class="action-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DASHBOARD INFO -->
+        <div class="dashboard-info mt-5">
+
+            <div class="info-icon">
+                ✦
+            </div>
+
+            <div>
+                <h3>
+                    Lead Management
+                </h3>
+
+                <p>
+                    Keep track of every customer enquiry,
+                    update lead status and follow up with
+                    potential garment buyers.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

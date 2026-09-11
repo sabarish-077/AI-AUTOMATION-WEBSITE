@@ -1,0 +1,498 @@
+{% extends "base.html" %}
+
+{% block title %}
+Products | Sabarish Garments
+{% endblock %}
+
+{% block content %}
+
+<section class="products-page">
+
+    <!-- =========================
+         PRODUCTS HERO
+    ========================== -->
+
+    <div class="products-hero">
+
+        <div class="products-hero-glow glow-purple"></div>
+        <div class="products-hero-glow glow-cyan"></div>
+
+        <div class="container">
+
+            <div class="products-hero-content">
+
+                <span class="section-label">
+                    SABARISH GARMENTS
+                </span>
+
+                <h1>
+                    Our
+                    <span>Product Collection</span>
+                </h1>
+
+                <p>
+                    Premium garment manufacturing for brands,
+                    businesses, wholesalers and bulk buyers.
+                </p>
+
+                <div class="hero-mini-tags">
+
+                    <span>100+ MOQ</span>
+                    <span>Bulk Orders</span>
+                    <span>Custom Branding</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         PRODUCT GRID
+    ========================== -->
+
+    <section class="catalog-section">
+
+        <div class="container">
+
+            <div class="catalog-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        OUR COLLECTION
+                    </span>
+
+                    <h2>
+                        Garments Made
+                        <span>For Your Brand</span>
+                    </h2>
+
+                </div>
+
+                <p>
+                    Choose from our core garment categories
+                    or contact us for custom manufacturing
+                    requirements.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- =========================
+                     PRODUCT 01
+                ========================== -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <article class="catalog-card">
+
+                        <div class="catalog-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=82"
+                                alt="Premium Cotton T-Shirt"
+                                loading="lazy"
+                            >
+
+                            <span class="catalog-number">
+                                01
+                            </span>
+
+                            <span class="catalog-badge">
+                                BESTSELLER
+                            </span>
+
+                        </div>
+
+                        <div class="catalog-content">
+
+                            <span class="catalog-category">
+                                EVERYDAY ESSENTIAL
+                            </span>
+
+                            <h3>
+                                Premium Cotton T-Shirt
+                            </h3>
+
+                            <p>
+                                Soft, breathable and comfortable
+                                cotton T-shirts suitable for brands,
+                                uniforms and wholesale orders.
+                            </p>
+
+                            <div class="catalog-bottom">
+
+                                <span>
+                                    Custom Branding
+                                </span>
+
+                                <a href="{{ url_for('enquiry') }}">
+                                    Get Quote →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- =========================
+                     PRODUCT 02
+                ========================== -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <article class="catalog-card">
+
+                        <div class="catalog-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?auto=format&fit=crop&w=900&q=82"
+                                alt="Premium Polo T-Shirt"
+                                loading="lazy"
+                            >
+
+                            <span class="catalog-number">
+                                02
+                            </span>
+
+                            <span class="catalog-badge">
+                                CORPORATE
+                            </span>
+
+                        </div>
+
+                        <div class="catalog-content">
+
+                            <span class="catalog-category">
+                                SMART WEAR
+                            </span>
+
+                            <h3>
+                                Polo T-Shirt
+                            </h3>
+
+                            <p>
+                                Premium polo T-shirts designed
+                                for corporate wear, brands,
+                                teams and business requirements.
+                            </p>
+
+                            <div class="catalog-bottom">
+
+                                <span>
+                                    Bulk Production
+                                </span>
+
+                                <a href="{{ url_for('enquiry') }}">
+                                    Get Quote →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- =========================
+                     PRODUCT 03
+                ========================== -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <article class="catalog-card">
+
+                        <div class="catalog-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=82"
+                                alt="Premium Hoodie"
+                                loading="lazy"
+                            >
+
+                            <span class="catalog-number">
+                                03
+                            </span>
+
+                            <span class="catalog-badge">
+                                STREETWEAR
+                            </span>
+
+                        </div>
+
+                        <div class="catalog-content">
+
+                            <span class="catalog-category">
+                                PREMIUM WEAR
+                            </span>
+
+                            <h3>
+                                Hoodies
+                            </h3>
+
+                            <p>
+                                Modern hoodies with comfortable
+                                fits for streetwear brands,
+                                fashion collections and businesses.
+                            </p>
+
+                            <div class="catalog-bottom">
+
+                                <span>
+                                    Custom Production
+                                </span>
+
+                                <a href="{{ url_for('enquiry') }}">
+                                    Get Quote →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- =========================
+                     PRODUCT 04
+                ========================== -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <article class="catalog-card">
+
+                        <div class="catalog-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80"
+                                alt="Oversized T-Shirt"
+                                loading="lazy"
+                            >
+
+                            <span class="catalog-number">
+                                04
+                            </span>
+
+                            <span class="catalog-badge">
+                                TRENDING
+                            </span>
+
+                        </div>
+
+                        <div class="catalog-content">
+
+                            <span class="catalog-category">
+                                STREETWEAR
+                            </span>
+
+                            <h3>
+                                Oversized T-Shirt
+                            </h3>
+
+                            <p>
+                                Relaxed oversized silhouettes
+                                for modern streetwear and
+                                fashion-focused brands.
+                            </p>
+
+                            <div class="catalog-bottom">
+
+                                <span>
+                                    Modern Fits
+                                </span>
+
+                                <a href="{{ url_for('enquiry') }}">
+                                    Get Quote →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- =========================
+                     PRODUCT 05
+                ========================== -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <article class="catalog-card">
+
+                        <div class="catalog-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=82"
+                                alt="Premium Sweatshirt"
+                                loading="lazy"
+                            >
+
+                            <span class="catalog-number">
+                                05
+                            </span>
+
+                            <span class="catalog-badge">
+                                PREMIUM
+                            </span>
+
+                        </div>
+
+                        <div class="catalog-content">
+
+                            <span class="catalog-category">
+                                WINTER WEAR
+                            </span>
+
+                            <h3>
+                                Sweatshirts
+                            </h3>
+
+                            <p>
+                                Comfortable crewneck sweatshirts
+                                suitable for fashion brands,
+                                uniforms and custom collections.
+                            </p>
+
+                            <div class="catalog-bottom">
+
+                                <span>
+                                    Bulk Manufacturing
+                                </span>
+
+                                <a href="{{ url_for('enquiry') }}">
+                                    Get Quote →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- =========================
+                     PRODUCT 06
+                ========================== -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <article class="catalog-card">
+
+                        <div class="catalog-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=82"
+                                alt="Full Sleeve Shirt"
+                                loading="lazy"
+                            >
+
+                            <span class="catalog-number">
+                                06
+                            </span>
+
+                            <span class="catalog-badge">
+                                NEW
+                            </span>
+
+                        </div>
+
+                        <div class="catalog-content">
+
+                            <span class="catalog-category">
+                                CASUAL WEAR
+                            </span>
+
+                            <h3>
+                                Full Sleeve Shirts
+                            </h3>
+
+                            <p>
+                                Clean full-sleeve designs for
+                                premium casual collections
+                                and business requirements.
+                            </p>
+
+                            <div class="catalog-bottom">
+
+                                <span>
+                                    Custom Orders
+                                </span>
+
+                                <a href="{{ url_for('enquiry') }}">
+                                    Get Quote →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 CUSTOM ORDER CTA
+            ========================== -->
+
+            <div class="catalog-cta">
+
+                <div class="catalog-cta-glow"></div>
+
+                <div class="catalog-cta-content">
+
+                    <span class="section-label">
+                        CUSTOM MANUFACTURING
+                    </span>
+
+                    <h2>
+                        Don't see what
+                        <span>you need?</span>
+                    </h2>
+
+                    <p>
+                        Tell us your product, fabric,
+                        quantity and branding requirements.
+                        We can discuss your custom garment order.
+                    </p>
+
+                </div>
+
+                <a
+                    href="{{ url_for('enquiry') }}"
+                    class="catalog-cta-button"
+                >
+                    Request a Quote →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+{% endblock %}
