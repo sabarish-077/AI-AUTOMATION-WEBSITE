@@ -11,7 +11,7 @@
         rel="stylesheet"
     >
 
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
     <div class="container navbar-container">
 
-        <a class="brand" href="{{ url_for('home') }}">
+        <a class="brand" href="index.html">
             <span class="brand-mark">SG</span>
             <span class="brand-text">
                 SABARISH
@@ -33,11 +33,11 @@
         </a>
 
         <div class="nav-links">
-            <a class="nav-link-custom" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-link-custom" href="index.html">Home</a>
             <a class="nav-link-custom" href="#about">About</a>
-            <a class="nav-link-custom" href="{{ url_for('products') }}">Products</a>
+            <a class="nav-link-custom" href="products.html">Products</a>
             <a class="nav-link-custom" href="#process">Process</a>
-            <a class="nav-quote-btn" href="{{ url_for('enquiry') }}">
+            <a class="nav-quote-btn" href="enquiry.html">
                 Get Quote <span>↗</span>
             </a>
         </div>
@@ -89,14 +89,14 @@
                     <div class="hero-buttons">
 
                         <a
-                            href="{{ url_for('enquiry') }}"
+                            href="enquiry.html"
                             class="hero-btn primary-btn"
                         >
                             Request a Quote →
                         </a>
 
                         <a
-                            href="{{ url_for('products') }}"
+                            href="products.html"
                             class="hero-btn secondary-btn"
                         >
                             Explore Products
@@ -415,7 +415,7 @@
 
 
                     <a
-                        href="{{ url_for('enquiry') }}"
+                        href="enquiry.html"
                         class="about-btn"
                     >
                         Start Your Order →
@@ -567,7 +567,7 @@
                             comfortable fits and quality finishing.
                         </p>
 
-                        <a href="{{ url_for('enquiry') }}">
+                        <a href="enquiry.html">
                             Get Quote →
                         </a>
 
@@ -613,7 +613,7 @@
                             for brands and businesses.
                         </p>
 
-                        <a href="{{ url_for('enquiry') }}">
+                        <a href="enquiry.html">
                             Get Quote →
                         </a>
 
@@ -659,7 +659,7 @@
                             fashion brands and collections.
                         </p>
 
-                        <a href="{{ url_for('enquiry') }}">
+                        <a href="enquiry.html">
                             Get Quote →
                         </a>
 
@@ -705,7 +705,7 @@
                             for fashion-forward brands.
                         </p>
 
-                        <a href="{{ url_for('enquiry') }}">
+                        <a href="enquiry.html">
                             Get Quote →
                         </a>
 
@@ -738,7 +738,7 @@
             </div>
 
             <a
-                href="{{ url_for('products') }}"
+                href="products.html"
                 class="view-all-btn"
             >
                 View All Products →
@@ -901,7 +901,7 @@
             </p>
 
             <a
-                href="{{ url_for('enquiry') }}"
+                href="enquiry.html"
                 class="cta-btn"
             >
                 Request a Quote →
@@ -927,7 +927,7 @@
             <div>
 
                 <a
-                    href="{{ url_for('home') }}"
+                    href="index.html"
                     class="footer-logo"
                 >
                     SABARISH
@@ -943,7 +943,7 @@
 
             <div class="footer-links">
 
-                <a href="{{ url_for('home') }}">
+                <a href="index.html">
                     Home
                 </a>
 
@@ -951,11 +951,11 @@
                     About
                 </a>
 
-                <a href="{{ url_for('products') }}">
+                <a href="products.html">
                     Products
                 </a>
 
-                <a href="{{ url_for('enquiry') }}">
+                <a href="enquiry.html">
                     Contact
                 </a>
 
@@ -1078,7 +1078,7 @@
 
 
 <script
-    src="{{ url_for('static', filename='js/script.js') }}"
+    src="static/js/script.js"
 ></script>
 
 <script

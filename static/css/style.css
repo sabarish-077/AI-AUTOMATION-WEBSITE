@@ -65,7 +65,7 @@ html {
 }
 
 html {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 body {
@@ -120,7 +120,7 @@ textarea {
    ========================================================= */
 
 .container {
-    max-width: 1180px;
+    max-width: 1280px;
 }
 
 
@@ -331,8 +331,8 @@ textarea {
 
     position: relative;
 
-    min-height: 470px;
-    padding: 14px 0 10px;
+    min-height: 620px;
+    padding: 20px 0 18px;
 
     display: flex;
     align-items: center;
@@ -401,7 +401,7 @@ textarea {
 
     z-index: 2;
 
-    max-width: 650px;
+    max-width: 720px;
 }
 
 .hero h1 {
@@ -411,7 +411,7 @@ textarea {
     color: white;
 
     font-size:
-        clamp(38px, 3.8vw, 56px);
+        clamp(42px, 4.5vw, 68px);
 
     line-height: 0.9;
 
@@ -442,13 +442,13 @@ textarea {
 
 .hero p {
 
-    max-width: 620px;
+    max-width: 680px;
 
-    margin: 20px 0;
+    margin: 22px 0;
 
     color: var(--text-secondary);
 
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.8;
 }
 
@@ -477,10 +477,10 @@ textarea {
     align-items: center;
     justify-content: center;
 
-    padding: 15px 24px;
+    padding: 16px 28px;
     border-radius: 999px;
 
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 800;
     letter-spacing: 0.2px;
 
@@ -611,6 +611,8 @@ textarea {
     position: relative;
     z-index: 2;
     width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
 
     overflow: hidden;
     border-radius: 32px;
@@ -670,7 +672,7 @@ textarea {
 .hero-image img {
 
     width: 100%;
-    height: 400px;
+    height: 470px;
     object-fit: cover;
     display: block;
     transition: transform 0.7s ease;
@@ -687,7 +689,7 @@ textarea {
 
 .stats-section {
 
-    padding: 50px 0;
+    padding: 60px 0;
 
     background:
         linear-gradient(180deg, rgba(13,13,27,0.96), rgba(8,8,18,1));

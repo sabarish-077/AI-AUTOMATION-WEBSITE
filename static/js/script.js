@@ -75,41 +75,10 @@ async function sendMessage() {
     chat.appendChild(loading);
 
 
-    try {
+    loading.innerText =
+        "AI assistant is unavailable on GitHub Pages. Please use the enquiry form instead.";
 
-        const response =
-            await fetch("/ai", {
-
-                method: "POST",
-
-                headers: {
-                    "Content-Type":
-                        "application/json"
-                },
-
-                body: JSON.stringify({
-                    message: message
-                })
-
-            });
-
-
-        const data =
-            await response.json();
-
-
-        loading.innerText =
-            data.reply;
-
-
-    } catch (error) {
-
-        console.error(error);
-
-        loading.innerText =
-            "Sorry, something went wrong.";
-
-    }
+    console.info("Static GitHub Pages build: backend AI chat is disabled.");
 
 
     chat.scrollTop =
